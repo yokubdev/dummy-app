@@ -20,6 +20,7 @@ export const router = createBrowserRouter([
   //     </QueryParamProvider>
   //   ),
   // },
+  ...routes,
   {
     index: true,
     path: "/",
@@ -29,5 +30,4 @@ export const router = createBrowserRouter([
       return { Component: DashboardPage };
     },
   },
-  ...routes,
 ]);

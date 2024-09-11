@@ -1,5 +1,5 @@
-import React from "react";
+import classes from "./dashboardPage.module.scss";
 
 export const Page = () => {
-  return <div>Page</div>;
+  return <div className={classes.wrapper}>Dashboard Page</div>;
 };
