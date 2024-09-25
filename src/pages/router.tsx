@@ -1,5 +1,6 @@
-import routes from "@/shared/routes";
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from 'react-router-dom';
+
+import routes from '@/shared/routes';
 // import { QueryParamProvider } from "use-query-params";
 // import { ReactRouter6Adapter } from "use-query-params/adapters/react-router-6";
 
@@ -20,14 +21,14 @@ export const router = createBrowserRouter([
   //     </QueryParamProvider>
   //   ),
   // },
-  ...routes,
-  {
-    index: true,
-    path: "/",
-    async lazy() {
-      const { DashboardPage } = await import("@/pages/Dashboard");
-
-      return { Component: DashboardPage };
-    },
-  },
+  ...routes
+  // {
+  //   index: true,
+  //   path: '/',
+  //   async lazy() {
+  //     const { DashboardPage } = await import('@/pages/Dashboard');
+  //
+  //     return { Component: DashboardPage };
+  //   }
+  // }
 ]);

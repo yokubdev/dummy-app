@@ -2,9 +2,9 @@ export const userRoutes = [
   {
     path: "/user",
     async lazy() {
-      const { DashboardPage } = await import("@/pages/Dashboard");
+      const { UserPage } = await import("@/pages/User");
 
-      return { Component: DashboardPage };
+      return { Component: UserPage };
     },
   },
 ];

@@ -19,9 +19,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background: rgb(0,36,27);
+  background: linear-gradient(45deg, rgba(0,36,27,0.47111344537815125) 0%, rgba(9,111,121,1) 28%, rgba(0,189,255,1) 53%, rgba(0,189,255,0.3226540616246498) 87%);
 }
